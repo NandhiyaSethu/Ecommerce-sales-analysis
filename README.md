@@ -69,8 +69,9 @@ SELECT
   COUNT(*) AS total_orders,
   ROUND(SUM(Sales), 2) AS total_sales,
   ROUND(SUM(Profit), 2) AS total_profit,
-  ROUND(SUM(Profit) * 100.0 / SUM(Sales), 1) AS profit_margin_pct
-FROM `ecommerce-analysis.superstore_data.superstore`
+  ROUND(SUM(Profit) * 100.0 / SUM(Sales), 1)
+    AS profit_margin_pct
+FROM `e-commerce-analysis-495305.superstore_data.superstore1`
 GROUP BY Category
 ORDER BY total_sales DESC;
 ```
@@ -82,8 +83,9 @@ WITH SubCategoryProfit AS (
     `Sub-Category`,
     ROUND(SUM(Sales), 2) AS total_sales,
     ROUND(SUM(Profit), 2) AS total_profit,
-    RANK() OVER (ORDER BY SUM(Profit) DESC) AS profit_rank
-  FROM `ecommerce-analysis.superstore_data.superstore`
+    RANK() OVER (ORDER BY SUM(Profit) DESC)
+      AS profit_rank
+  FROM `e-commerce-analysis-495305.superstore_data.superstore1`
   GROUP BY `Sub-Category`
 ),
 total_count AS (
@@ -110,7 +112,7 @@ FROM (
     FORMAT_DATE('%Y-%m', `Order Date`) AS order_month,
     ROUND(SUM(Sales), 2) AS monthly_sales,
     ROUND(SUM(Profit), 2) AS monthly_profit
-  FROM `ecommerce-analysis.superstore_data.superstore`
+  FROM `e-commerce-analysis-495305.superstore_data.superstore1` 
   GROUP BY FORMAT_DATE('%Y-%m', `Order Date`)
 )
 ORDER BY order_month;
@@ -118,14 +120,15 @@ ORDER BY order_month;
 
 ### Query 4 — Region Performance vs Discount Impact
 ```sql
-SELECT
+SELECT 
   Region,
   COUNT(*) AS total_orders,
   ROUND(SUM(Sales), 2) AS total_sales,
   ROUND(SUM(Profit), 2) AS total_profit,
   ROUND(AVG(Discount) * 100, 1) AS avg_discount_pct,
-  ROUND(SUM(Profit) * 100.0 / SUM(Sales), 1) AS profit_margin_pct
-FROM `ecommerce-analysis.superstore_data.superstore`
+  ROUND(SUM(Profit) * 100.0 / SUM(Sales), 1) 
+    AS profit_margin_pct
+FROM `e-commerce-analysis-495305.superstore_data.superstore1` 
 GROUP BY Region
 ORDER BY total_profit DESC;
 ```
@@ -227,13 +230,11 @@ ecommerce-sales-analysis/
 
 ## About Me
 
-Transitioning from 5 years of Application Support (Aria project) to Data Analytics. This project demonstrates end-to-end data analysis skills — from writing advanced SQL queries in BigQuery to building business insights and visualisations in Google Sheets.
+This project demonstrates end-to-end data analysis skills — from writing advanced SQL queries in BigQuery to building business insights and visualisations in Google Sheets.
 
 - LinkedIn: [your LinkedIn URL]
-- Tableau Public: [your Tableau Public URL]
-- Email: [your email]
+- Tableau Public:  (https://public.tableau.com/app/profile/nandhiya.s/viz/HRAttrition_17774538480190/Dashboard2)
+- Email: nandhiyadevi2000@gmail.com
 
 ---
-
-*Project completed as part of a data analyst portfolio — May 2026*
 
