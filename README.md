@@ -168,6 +168,8 @@ ORDER BY Segment, rank_in_segment;
 | Monthly Sales Trend 2014–2017 | Line Chart | Q4 peaks every year — 6x Jan-Feb levels |
 | Region: Profit Margin vs Avg Discount | Grouped Bar | Central 24% discount = 7.9% margin |
 
+Google Sheet Link - https://docs.google.com/spreadsheets/d/1_bzN31pKDLRIpYrWHjNmSmVzcbDkcEnhBotMWmZ2xio/edit?usp=sharing
+
 ---
 
 ## Results Summary
