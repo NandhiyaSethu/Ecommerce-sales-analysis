@@ -133,7 +133,7 @@ GROUP BY Region
 ORDER BY total_profit DESC;
 ```
 
-### Query 5 — Top Customers per Segment (Double CTE + PARTITION BY)
+### Query 5 — Top Customers per Segment
 ```sql
 WITH CustomerSales AS (
   SELECT
@@ -158,22 +158,6 @@ FROM RankedCustomers
 WHERE rank_in_segment <= 3
 ORDER BY Segment, rank_in_segment;
 ```
-
----
-
-## SQL Concepts Demonstrated
-
-| Concept | Used In |
-|---|---|
-| GROUP BY + Aggregations | Query 1, 4 |
-| Common Table Expressions (CTEs) | Query 2, 5 |
-| RANK() Window Function | Query 2, 5 |
-| PARTITION BY | Query 5 |
-| Running Total (SUM OVER) | Query 3 |
-| Subquery | Query 3 |
-| FORMAT_DATE | Query 3 |
-| COUNTIF | Data validation |
-
 ---
 
 ## Charts Built in Google Sheets
@@ -226,9 +210,6 @@ ecommerce-sales-analysis/
     └── key_findings.md
 ```
 
-- LinkedIn: [your LinkedIn URL]
 - Tableau Public:  (https://public.tableau.com/app/profile/nandhiya.s/viz/HRAttrition_17774538480190/Dashboard2)
-- Email: nandhiyadevi2000@gmail.com
 
----
 
