@@ -226,12 +226,6 @@ ecommerce-sales-analysis/
     └── key_findings.md
 ```
 
----
-
-## About Me
-
-This project demonstrates end-to-end data analysis skills — from writing advanced SQL queries in BigQuery to building business insights and visualisations in Google Sheets.
-
 - LinkedIn: [your LinkedIn URL]
 - Tableau Public:  (https://public.tableau.com/app/profile/nandhiya.s/viz/HRAttrition_17774538480190/Dashboard2)
 - Email: nandhiyadevi2000@gmail.com
