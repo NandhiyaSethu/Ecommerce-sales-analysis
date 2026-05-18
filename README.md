@@ -210,6 +210,4 @@ ecommerce-sales-analysis/
     └── key_findings.md
 ```
 
-- Tableau Public:  (https://public.tableau.com/app/profile/nandhiya.s/viz/HRAttrition_17774538480190/Dashboard2)
-
 
